@@ -1,0 +1,17 @@
+shared:
+  box: sunkenithin/oel7
+  non_rotational: 'on'
+
+node1:
+  vm_name: svsdg1
+  mem_size: 4096
+  cpus: 2
+  public_ip: 192.168.1.20
+  u01_disk: ./svsdg1_u01.vdi
+
+node2:
+  vm_name: svsdg2
+  mem_size: 4096
+  cpus: 2
+  public_ip: 192.168.1.21
+  u01_disk: ./svsdg2_u01.vdi

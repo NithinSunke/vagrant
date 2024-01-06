@@ -1,0 +1,23 @@
+shared:
+  box: sunkenithin/oel8
+  non_rotational: 'on'
+  asm_disk_1: D:\VIRTUALBOX\shared\rac\asm_disk_1.vdi
+  asm_disk_2: D:\VIRTUALBOX\shared\rac\asm_disk_2.vdi
+  asm_disk_3: D:\VIRTUALBOX\shared\rac\asm_disk_3.vdi
+  asm_disk_size: 32
+  
+node1:
+  vm_name: rac1
+  mem_size: 10240
+  cpus: 2
+  public_ip: 192.168.1.20
+  private_ip: 172.30.1.20
+  u01_disk: D:\VIRTUALBOX\rac1\ol7_121_rac1_u01.vdi
+
+node2:
+  vm_name: rac2
+  mem_size: 10240
+  cpus: 2
+  public_ip: 192.168.1.21
+  private_ip: 172.30.1.21
+  u01_disk: D:\VIRTUALBOX\rac2\ol7_121_rac2_u01.vdi

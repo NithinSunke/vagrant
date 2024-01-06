@@ -1,0 +1,7 @@
+box: sunkenithin/oel7
+non_rotational: 'on'
+vm_name: scsdwls01
+mem_size: 1024
+cpus: 1
+public_ip: 192.168.1.20
+u01_disk: D:\VIRTUALBOX\scswls01\scswls01_u01.vdi

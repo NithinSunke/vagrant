@@ -2,8 +2,8 @@
 echo "******************************************************************************"
 echo "Set Hostname." `date`
 echo "******************************************************************************"
-hostnamectl set-hostname ${ORACLE_HOSTNAME}
-hostname ${ORACLE_HOSTNAME}
+hostnamectl set-hostname ${HOSTNAME}.${DOMAIN_NAME}
+hostname  ${HOSTNAME}.${DOMAIN_NAME}
 cat > /etc/hostname <<EOF
-${ORACLE_HOSTNAME}
+ ${HOSTNAME}.${DOMAIN_NAME}
 EOF

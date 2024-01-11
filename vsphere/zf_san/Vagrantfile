@@ -34,4 +34,9 @@ Vagrant.configure("2") do |config|
     esxi.guest_guestos = var_guest_guestos
   end
   config.vm.network "public_network", type: "static", ip: var_public_ip
+  config.vm.provision "shell", inline: <<-SHELL
+    yum install git -y
+    cd /tmp
+    
+  SHELL
 end

@@ -1,6 +1,6 @@
 echo "installing os packages"
 echo "+++++++++++++++++++++++"
-sh /tmp/vagrant/vsphere/zf_san/script/install_os_packages.sh
+sh /tmp/vagrant/vsphere/zf_san/scripts/install_os_packages.sh
 systemctl start nfs-server.service
 systemctl enable nfs-server.service
 systemctl status nfs-server.service
@@ -33,7 +33,7 @@ systemctl restart sshd
 . /nfsshare/vagrant/vsphere/zf_san/config/install.env
 echo "setting the hostnames"
 echo "+++++++++++++++++++++++"
-sh /nfsshare/vagrant/vsphere/zf_san/script/configure_hostname.sh
+sh /nfsshare/vagrant/vsphere/zf_san/scripts/configure_hostname.sh
 
 echo "=========================================================="
 echo "server build  ${HOSTNAME}.${DOMAIN_NAME} is completed"

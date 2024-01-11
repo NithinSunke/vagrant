@@ -30,7 +30,8 @@ mv /etc/ssh/sshd_config /etc/ssh/sshd_config_org
 cp /nfsshare/vagrant/vsphere/zf_san/config/sshd_config /etc/ssh/sshd_config
 systemctl restart sshd
 
-. /nfsshare/vagrant/vsphere/zf_san/config/install.env
+cd  /nfsshare/vagrant/vsphere/zf_san/config
+source install.env
 echo "setting the hostnames"
 echo "+++++++++++++++++++++++"
 sh /nfsshare/vagrant/vsphere/zf_san/scripts/configure_hostname.sh

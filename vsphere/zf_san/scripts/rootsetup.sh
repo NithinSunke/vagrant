@@ -36,7 +36,7 @@ cd  /nfsshare/vagrant/vsphere/zf_san/config
 source install.env
 echo "setting the hostnames"
 echo "+++++++++++++++++++++++"
-sh /nfsshare/vagrant/vsphere/zf_san/scripts/configure_hostname.sh
+sudo sh /nfsshare/vagrant/vsphere/zf_san/scripts/configure_hostname.sh
 
 echo "=========================================================="
 echo "server build  ${HOSTNAME}.${DOMAIN_NAME} is completed"

@@ -1,1 +1,1 @@
-sudo bash -c 'sh /vagrant/scripts/rootsetup.sh'
+sudo bash -c 'sh /tmp/vagrant/vsphere/zf_san/scripts/rootsetup.sh'

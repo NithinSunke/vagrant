@@ -1,0 +1,12 @@
+box: generic-x64/centos8s
+vm_name: snvsan01
+mem_size: 2048
+cpus: 2
+public_ip: 192.168.1.20
+esxi_hostport: 22
+esxi_disk_store: VMSTORE
+guest_name: snvsan01
+guest_memsize: 2048
+guest_numvcpus: 2
+guest_guestos: 'centos-64'
+esxi_virtual_network: PRODUCTION

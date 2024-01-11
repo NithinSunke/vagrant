@@ -1,0 +1,4 @@
+box: sunkenithin/oel7
+vm_name: scsdwls01
+mem_size: 2048
+cpus: 2

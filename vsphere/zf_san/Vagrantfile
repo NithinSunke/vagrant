@@ -40,7 +40,7 @@ Vagrant.configure("2") do |config|
     git clone https://github.com/NithinSunke/vagrant.git
     chmod -R 777 vagrant
     cd /tmp/vagrant/vsphere/zf_san/scripts
-    sudo  sh setup.sh 
+    sh setup.sh 
     cd /tmp/vagrant
     rm -rf 
   SHELL

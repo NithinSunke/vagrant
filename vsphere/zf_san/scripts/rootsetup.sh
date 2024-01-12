@@ -1,8 +1,7 @@
-cd  /tmp/vagrant/vsphere/zf_san/config
-.  install_env.sh
+.  /tmp/vagrant/vsphere/zf_san/config/install_env.sh
 echo "installing os packages"
 echo "+++++++++++++++++++++++"
-sh /tmp/vagrant/vsphere/zf_san/scripts/install_os_packages.sh
+sudo sh /tmp/vagrant/vsphere/zf_san/scripts/install_os_packages.sh
 systemctl start nfs-server.service
 systemctl enable nfs-server.service
 systemctl status nfs-server.service
@@ -31,14 +30,14 @@ echo "modifing sshd_config file"
 echo "+++++++++++++++++++++++"
 
 mv /etc/ssh/sshd_config /etc/ssh/sshd_config_org
-cp /nfsshare/vagrant/vsphere/zf_san/config/sshd_config /etc/ssh/sshd_config
-sudo systemctl restart sshd
+cp /tmp/vagrant/vsphere/zf_san/config/sshd_config /etc/ssh/sshd_config
+systemctl restart sshd
 
 cd  /tmp/vagrant/vsphere/zf_san/config
 .  install_env.sh
 echo "setting the hostnames"
 echo "+++++++++++++++++++++++"
-sudo sh /nfsshare/vagrant/vsphere/zf_san/scripts/configure_hostname.sh
+sh /tmp/vagrant/vsphere/zf_san/scripts/configure_hostname.sh
 
 echo "=========================================================="
 echo "server build  ${HOSTNAME}.${DOMAIN_NAME} is completed"

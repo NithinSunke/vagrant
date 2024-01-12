@@ -15,8 +15,8 @@ df -kh
 
 echo "192.168.1.10:/nfsshare /nfsshare  nfs 0 0"  >> /etc/fstab
 
-cd  /tmp/vagrant/vsphere/zf_san/config
-.  install_env.sh
+.  /tmp/vagrant/vsphere/zf_san/config/install_env.sh
+
 echo "******************************************************************************"
 echo "Set root and oracle password and change ownership of /u01." `date`
 echo "******************************************************************************"
@@ -33,8 +33,8 @@ mv /etc/ssh/sshd_config /etc/ssh/sshd_config_org
 cp /tmp/vagrant/vsphere/zf_san/config/sshd_config /etc/ssh/sshd_config
 systemctl restart sshd
 
-cd  /tmp/vagrant/vsphere/zf_san/config
-.  install_env.sh
+.  /tmp/vagrant/vsphere/zf_san/config/install_env.sh
+
 echo "setting the hostnames"
 echo "+++++++++++++++++++++++"
 sh /tmp/vagrant/vsphere/zf_san/scripts/configure_hostname.sh

@@ -7,4 +7,5 @@ chattr +i /etc/resolv.conf
 yum install -y yum-utils
 yum install -y zip unzip # sshpass 
 yum install lvm2 -y
+yum install -y nfs-utils
 yum -y update
